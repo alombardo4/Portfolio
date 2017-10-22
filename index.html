@@ -1,0 +1,21 @@
+---
+layout: default
+---
+
+<div class="home">
+  <div class="homepage">
+      <p>Software Engineer</p>
+      <p>Gerogia Tech Computer Science and Computing and Management graduate</p>
+  </div>
+  <hr />
+  <div class="project-list">
+      <h1 class="page-heading">Projects</h1>      
+      {% for post in site.posts %}
+      <h3>
+        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+      </h3>
+      {% endfor %}
+  </div>
+
+
+</div>

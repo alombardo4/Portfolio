@@ -1,0 +1,24 @@
+<div id="header">
+  <div class="header-img">
+      <img src="{{site.header_img}}" />    
+  </div>
+
+  <h1>
+    <a id="sitename" href="/">{{site.title}}</a>
+  </h1>
+
+  <!-- Add something about you in p tag-->
+  <p>{{site.description}}<p>      
+  <span class="credits social">
+      {% for sl in site.data.personal.social %}
+        {% unless sl[1] == '' %}
+          <a href="{{sl[1]}}" target="_blank"><i class="fa fa-{{sl[0]}}"></i></a>
+        {% endunless %}
+      {% endfor %}
+  </span>
+  <hr/>
+
+
+
+
+</div>
