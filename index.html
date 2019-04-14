@@ -1,15 +1,23 @@
 ---
 layout: default
 ---
-
 <div class="home">
-  <div class="homepage">
-      <p>Software Engineer</p>
-      <p>Gerogia Tech Computer Science and Computing and Management graduate</p>
+  <div class="project-list">
+    <h1 class="page-heading">Blog Posts</h1>
+    <h3><a class="post-link" href="https://medium.com/@aleclombardo" target="_blank">Medium</a></h3>
   </div>
   <hr />
   <div class="project-list">
-      <h1 class="page-heading">Projects</h1>      
+    <h1 class="page-heading">Open Source Projects</h1>
+    <h3><a class="post-link" href="https://github.com/alombardo4/dendrite" target="_blank">Dendrite</a> - a work-in-progress event sourcing framework for NodeJS</h3>
+    <h3><a class="post-link" href="https://github.com/alombardo4/rsvpman" target="_blank">RSVPMan</a> - an RSVP system for events, built for my wedding, fully containerized</h3>
+    <h3><a class="post-link" href="https://github.com/alombardo4/brewfinder" target="_blank">Brewfinder</a> - a system for reporting spottings of rare beers at various stores</h3>
+    <h3><a class="post-link" href="https://github.com/alombardo4/agendue" target="_blank">Agendue</a> - a Ruby on Rails app for shared project management, with native iOS and Android clients</h3>
+    <h3><a class="post-link" href="https://github.com/alombardo4/fishweb" target="_blank">Fishweb</a> - an isomorphic JS app for monitoring a fishtank and controlling lighting patterns</h3>
+  </div>
+  <hr />
+  <div class="project-list">
+      <h1 class="page-heading">Previous Freelance Work</h1>      
       {% for post in site.posts %}
       <h3>
         <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
