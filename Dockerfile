@@ -1,15 +1,16 @@
-FROM ruby:2.3
+FROM ruby:2.6.3 as builder
 
 RUN gem install jekyll
 
 ADD . /app
 
-RUN cd /app && jekyll build 
+WORKDIR /app
 
-RUN mkdir -p /site
-RUN cp -r /app/_site/* /site
+RUN jekyll build 
 
 FROM nginx:alpine
 
-COPY --from=0 /site/ /site
-RUN cp -r /site/* /usr/share/nginx/html
+COPY --from=builder /app/_site /usr/share/nginx/html/ 
+# RUN cp -r /site/* /usr/share/nginx/html
+
+EXPOSE 80

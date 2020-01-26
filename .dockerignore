@@ -1,0 +1,6 @@
+.sass-cache
+.idea
+_site
+docker-build-and-push.sh
+Dockerfile
+VERSION

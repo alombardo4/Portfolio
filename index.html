@@ -8,21 +8,43 @@ layout: default
   </div>
   <hr />
   <div class="project-list">
-    <h1 class="page-heading">Open Source Projects</h1>
-    <h3><a class="post-link" href="https://github.com/alombardo4/dendrite" target="_blank">Dendrite</a> - a work-in-progress event sourcing framework for NodeJS</h3>
-    <h3><a class="post-link" href="https://github.com/alombardo4/rsvpman" target="_blank">RSVPMan</a> - an RSVP system for events, built for my wedding, fully containerized</h3>
-    <h3><a class="post-link" href="https://github.com/alombardo4/brewfinder" target="_blank">Brewfinder</a> - a system for reporting spottings of rare beers at various stores</h3>
-    <h3><a class="post-link" href="https://github.com/alombardo4/agendue" target="_blank">Agendue</a> - a Ruby on Rails app for shared project management, with native iOS and Android clients</h3>
-    <h3><a class="post-link" href="https://github.com/alombardo4/fishweb" target="_blank">Fishweb</a> - an isomorphic JS app for monitoring a fishtank and controlling lighting patterns</h3>
+    <h1 class="page-heading">Conference Talks</h1>
+    <h3><a class="post-link" href="https://node-atl.org/speaker-info/alec-lombardo" target="_blank">NodeAtlanta 2020</a>
+    </h3>
   </div>
   <hr />
   <div class="project-list">
-      <h1 class="page-heading">Previous Freelance Work</h1>      
-      {% for post in site.posts %}
-      <h3>
-        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-      </h3>
-      {% endfor %}
+    <h1 class="page-heading">Open Source Projects</h1>
+    <h3>
+      <a class="post-link" href="https://github.com/alombardo4/idrac-fan-control-docker" target="_blank">IDRAC Fan
+        Control Docker Image</a>
+    </h3>
+    <p>A Docker image that can tell Dell PowerEdge servers to quiet down their fans</p>
+    <h3><a class="post-link" href="https://github.com/alombardo4/my-cli" target="_blank">POC Project Modeling CLI</a>
+    </h3>
+    <p>
+      a CLI that abstracts build and test commands across multiple language runtimes, used as the basis for my
+      NodeAtlanta 2020 talk
+    </p>
+    <h3><a class="post-link" href="https://github.com/alombardo4/dendrite" target="_blank">Dendrite</a></h3>
+    <p>a work-in-progress event sourcing framework for NodeJS</p>
+    <h3><a class="post-link" href="https://github.com/alombardo4/rsvpman" target="_blank">RSVPMan</a></h3>
+    <p>an RSVP system for events, built for my wedding, fully containerized</p>
+    <h3><a class="post-link" href="https://github.com/alombardo4/brewfinder" target="_blank">Brewfinder</a></h3>
+    <p>a system for reporting spottings of rare beers at various stores</p>
+    <h3><a class="post-link" href="https://github.com/alombardo4/agendue" target="_blank">Agendue</a></h3>
+    <p>a Ruby on Rails app for shared project management, with native iOS and Android clients</p>
+    <h3><a class="post-link" href="https://github.com/alombardo4/fishweb" target="_blank">Fishweb</a></h3>
+    <p>an isomorphic JS app for monitoring a fishtank and controlling lighting patterns</p>
+  </div>
+  <hr />
+  <div class="project-list">
+    <h1 class="page-heading">Previous Freelance Work</h1>
+    {% for post in site.posts %}
+    <h3>
+      <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+    </h3>
+    {% endfor %}
   </div>
 
 
